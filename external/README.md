@@ -1,0 +1,1 @@
+This folder stores the related project to be tested.
