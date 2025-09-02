@@ -1,6 +1,6 @@
 ## I/O Efficiency in Graph-Based Disk-Resident Approximate Nearest Neighbor Search — Benchmark and Reproduction Guide
 
-This repository provides a consolidated, research-oriented benchmark to reproduce and extend the empirical study of I/O efficiency in disk-resident graph-based approximate nearest neighbor (ANN) search, as explored in the paper “I/O Efficiency in Graph-Based Disk-Resident Approximate Nearest Neighbor Search: A Design Space Exploration.” The benchmark organizes dataset layouts, evaluation metrics, and links to implementations spanning multiple codebases.
+This repository provides a consolidated, research-oriented benchmark to reproduce and extend the empirical study of I/O efficiency in disk-resident graph-based approximate nearest neighbor (ANN) search, as explored in the paper “**I/O Efficiency in Graph-Based Disk-Resident Approximate Nearest Neighbor Search: A Design Space Exploration.**” The benchmark organizes dataset layouts, evaluation metrics, and links to implementations spanning multiple codebases.
 
 The primary goals are: (i) to facilitate fair, repeatable comparisons across representative systems; (ii) to expose I/O-level trade-offs alongside algorithmic parameters (e.g., graph degree, beam width/ef, product quantization settings); and (iii) to document a reproducible workflow consistent with academic standards.
 
@@ -121,9 +121,9 @@ Report both accuracy–throughput and latency–recall curves at matched Recall@
 - Metrics: I/Os per query, QPS, mean/p95/p99, IOPS, bandwidth, memory/disk footprint.
 - Stability: 3–5 independent trials; warm‑up; pin affinity; consistent cache policy.
 
-Practical notes from the paper:
-- Single‑factor: MemGraph and DynamicWidth show strong standalone gains; PageShuffle and PageSearch are weak alone but synergize; Pipeline can regress under concurrency; AiS trades memory for 10×+ disk footprint.
-- Compositions: PS+PSe are complementary; adding MemGraph amplifies benefits; DW complements Pipeline but tends to dominate under concurrency. The best overall under our settings is C5 (OctopusANN).
+**Practical notes from the paper:**
+- **Single‑factor: MemGraph and DynamicWidth show strong standalone gains; PageShuffle and PageSearch are weak alone but synergize; Pipeline can regress under concurrency; AiS trades memory for 10×+ disk footprint.**
+- **Compositions: PS+PSe are complementary; adding MemGraph amplifies benefits; DW complements Pipeline but tends to dominate under concurrency. The best overall under our settings is C5 (OctopusANN).**
 
 ## Dependencies
 
@@ -298,18 +298,18 @@ If you use this benchmark, please cite the original paper and this repository. E
 ```bibtex
 @inproceedings{ioeff-ann-graph,
   title     = {I/O Efficiency in Graph-Based Disk-Resident Approximate Nearest Neighbor Search: A Design Space Exploration},
-  author    = {Liang Li and <Author2> and <Author3> and others},
-  booktitle = {Proceedings of <Venue>},
+  author    = {Liang Li and Shufeng Gong and Yanan Yang and Yiduo Wang and Jie Wu},
+  booktitle = {Proceedings of VLDB},
   year      = {<Year>},
   doi       = {<DOI>}
 }
 
 @misc{iobench4diskann,
   title  = {IObench4DiskANN: A Reproducible Benchmark for Disk-Resident Graph ANN I/O Efficiency},
-  author = {<Your Name or Group>},
-  year   = {<Year>},
+  author = {Liang Li},
+  year   = {2025},
   howpublished = {GitHub repository},
-  note   = {\url{https://github.com/<org>/IObench4DiskANN}}
+  note   = {\url{https://github.com/LeonLee666/IObench4DiskANN}}
 }
 ```
 
