@@ -2,7 +2,7 @@
 
 This repository provides a consolidated, research-oriented benchmark to reproduce and extend the empirical study of I/O efficiency in disk-resident graph-based approximate nearest neighbor (ANN) search, as explored in the paper “**I/O Efficiency in Graph-Based Disk-Resident Approximate Nearest Neighbor Search: A Design Space Exploration.**” The benchmark organizes dataset layouts, evaluation metrics, and links to implementations spanning multiple codebases.
 
-The primary goals are: (i) to facilitate fair, repeatable comparisons across representative systems; (ii) to expose I/O-level trade-offs alongside algorithmic parameters (e.g., graph degree, beam width/ef, product quantization settings); and (iii) to document a reproducible workflow consistent with academic standards.
+The primary goals are: (i) to facilitate fair, repeatable comparisons across representative systems; (ii) to expose I/O-level trade-offs alongside algorithmic parameters (e.g., graph degree, beam width, product quantization settings); and (iii) to document a reproducible workflow consistent with academic standards.
 
 ### External Implementations (Evaluated Systems)
 
