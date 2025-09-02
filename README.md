@@ -50,14 +50,12 @@ This benchmark supports commonly used ANN datasets. Recommended sources include:
 - DEEP100M
 - SPACEV100M
 
-
-Dataset placement and downloads:
-
-Please download datasets and organize them according to the directory structure above. Download links:
+Please download the datasets and organize them according to the directory structure above. Download links:
 - SIFT1M and SIFT100M: http://corpus-texmex.irisa.fr/
 - DEEP100M: https://research.yandex.com/blog/benchmarks-for-billion-scale-similarity-search
 - SPACEV100M: https://github.com/microsoft/SPTAG/tree/main/datasets/SPACEV1B
 
+NOTE that: SIFT1M has been included in this repo and can be pulled by: `git lfs pull`
 
 Dataset statistics and canonical index build parameters (B and M are memory budgets in GB):
 
