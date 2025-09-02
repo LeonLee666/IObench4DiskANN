@@ -116,7 +116,7 @@ Report both accuracy–throughput and latency–recall curves at matched Recall@
 - Baseline: PQ with fixed budgets; identical datasets and recall targets across all runs.
 - Controls: identical threading, async I/O engine, page size, and logging cadence.
 - Isolation: change one factor at a time when ablating; add minimal deltas when composing.
-- Metrics: I/Os per query, QPS, mean/p95/p99, IOPS, bandwidth, memory/disk footprint.
+- Metrics: I/Os per query, QPS, mean latency, IOPS, bandwidth, memory/disk footprint.
 - Stability: 3–5 independent trials; warm‑up; pin affinity; consistent cache policy.
 
 **Practical notes from the paper:**
